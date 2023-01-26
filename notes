@@ -1,0 +1,14 @@
+Step By Step Process
+-----------------------------------
+
+
+1) Create custom command. Custom command will execute with task scheduling scron job
+            php artisan make:command DemoCron
+
+2) Create controller & set-up routes to see all users after centain interval
+3) Register the newly created Task Scheduler class in laravel application in -->
+            app/Console/Kernel.php
+
+4) Run --> php artisan list ///// to see the lists of all routes
+5) Run/Execute  php artisan user:save /// to see the output
+6) Manually run cron using --> php artisan schedule:run
